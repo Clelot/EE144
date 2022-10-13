@@ -14,52 +14,60 @@ class Turtlebot():
 
 
 	def run(self):
-    	vel = Twist()
+    	 vel = Twist()
+
+    	vel.linear.x = 0
+    	vel.angular.z = 0.35
+    	for k in range(48):
+        	self.vel_pub.publish(vel)
+        	self.rate.sleep()
 
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(41):
+    	for i in range(78):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(23):
+    	for k in range(48):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
-
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(41):
+    	for i in range(78):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(25):
+    	for k in range(47):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
-
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(40):
+    	for i in range(78):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(25):
+    	for k in range(48):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
-
-    	vel.linear.x = -0.5
+    	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(41):
+    	for i in range(76):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
+
+
+
+
+
     	 
 
 if __name__ == '__main__':
