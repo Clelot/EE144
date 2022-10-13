@@ -18,46 +18,46 @@ class Turtlebot():
 
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(81):
+    	for i in range(41):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(47):
+    	for k in range(23):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
 
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(81):
+    	for i in range(41):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(49):
+    	for k in range(25):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
 
     	vel.linear.x = 0.5
     	vel.angular.z = 0
-    	for i in range(81):
+    	for i in range(40):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
     	vel.linear.x = 0
     	vel.angular.z = 0.35
-    	for k in range(49):
+    	for k in range(25):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
 
 
     	vel.linear.x = -0.5
     	vel.angular.z = 0
-    	for i in range(81):
+    	for i in range(41):
         	self.vel_pub.publish(vel)
         	self.rate.sleep()
     	 
